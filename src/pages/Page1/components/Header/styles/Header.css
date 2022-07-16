@@ -1,0 +1,56 @@
+@keyframes shine {
+  50% {
+    background-position: 150%;
+  }
+  100% {
+    background-position: -150%;
+  }
+}
+
+.header-page1 {
+  padding: 20px;
+  position: absolute;
+  width: 100vw;
+  font-family: Product Sans, sans-serif;
+  top: 0;
+  z-index: 2;
+}
+
+.header-page1 .nav-page1-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+}
+
+.header-page1 .left-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+}
+
+.header-page1 .nav-page1-list li {
+  color: #fff;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+.header-page1 .nav-page1-list li:hover {
+  opacity: 0.8;
+}
+
+.header-page1 .nav-free-trial {
+  border: 1px solid #fff;
+  padding: 10px;
+  background-image: linear-gradient(
+    -60deg,
+    transparent, transparent, 40%,
+    #ffffff44 40%, #ffffff44 60%,
+    transparent 60%, transparent 100%
+  );
+  background-size: 200% 100%;
+  background-repeat: no-repeat;
+  background-position-x: 150%;
+  animation: shine 2s infinite;
+  border-radius: 0.5em;
+}
